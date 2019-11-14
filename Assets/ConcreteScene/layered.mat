@@ -8,19 +8,52 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: layered
-  m_Shader: {fileID: 4800000, guid: 81d02e8644315b742b154842a3a2f98c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 13bc27e9813b7e041acdd192ad7fbf54, type: 3}
   m_ShaderKeywords: _MASKMAP0 _NORMALMAP0 _NORMALMAP_TANGENT_SPACE0 _NORMALMAP_TANGENT_SPACE1
     _NORMALMAP_TANGENT_SPACE2 _NORMALMAP_TANGENT_SPACE3
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
-  stringTagMap: {}
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_22E3DDBC:
+        m_Texture: {fileID: 2800000, guid: 38db013990fb3480782456f3dbbe3174, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_5CBA92CA:
+        m_Texture: {fileID: 2800000, guid: 73c10cc8768ab2043bed20149b6e5fd3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_6B2A3B06:
+        m_Texture: {fileID: 2800000, guid: d7e000faf238d46c2b3cf5c045279d1a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_74553C5C:
+        m_Texture: {fileID: 2800000, guid: d7e000faf238d46c2b3cf5c045279d1a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_7C061F6:
+        m_Texture: {fileID: 2800000, guid: bdfc7b268f2e74285ab7a54e28cfca39, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8EC218E0:
+        m_Texture: {fileID: 2800000, guid: 0e07f6ddc200641078bc0a11436d5dd9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_AB765F69:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DFD70155:
+        m_Texture: {fileID: 2800000, guid: d7e000faf238d46c2b3cf5c045279d1a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -274,6 +307,17 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_247A7D0A: 0.374
+    - Vector1_36F5B9E6: 0.79
+    - Vector1_3DFE128A: 1
+    - Vector1_588A26BE: -0.44
+    - Vector1_6677DCCA: 0.074
+    - Vector1_7E2A06B3: 0.54
+    - Vector1_8C5269B7: 0.83
+    - Vector1_9031E5A9: 10
+    - Vector1_A1063C88: 1.16
+    - Vector1_D25E09BD: 1.96
+    - Vector1_D9DC6478: 0.32
     - _AORemapMax: 1
     - _AORemapMax0: 1
     - _AORemapMax1: 1
@@ -452,6 +496,8 @@ Material:
     - _PPDPrimitiveWidth: 1
     - _ReceivesSSR: 1
     - _RefractionModel: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
     - _SSRefractionProjectionModel: 0
     - _Smoothness: 0.5
     - _Smoothness0: 0.149
@@ -532,6 +578,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - Color_E1C5C63D: {r: 1, g: 1, b: 1, a: 0}
+    - Color_E8E899E1: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 0}
+    - Color_F01AEADB: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor0: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor1: {r: 1, g: 1, b: 1, a: 1}
