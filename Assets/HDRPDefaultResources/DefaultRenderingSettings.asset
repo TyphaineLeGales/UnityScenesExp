@@ -174,7 +174,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1.009
+    m_Value: 0.932
     min: 0
     max: 4
   stepCount:
@@ -184,7 +184,7 @@ MonoBehaviour:
     max: 32
   radius:
     m_OverrideState: 0
-    m_Value: 2
+    m_Value: 1.97
     min: 0.25
     max: 5
   fullResolution:
@@ -197,7 +197,7 @@ MonoBehaviour:
     max: 256
   directLightingStrength:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.124
     min: 0
     max: 1
   enableRaytracing:
