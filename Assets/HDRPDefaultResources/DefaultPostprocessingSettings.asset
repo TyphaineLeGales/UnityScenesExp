@@ -30,7 +30,7 @@ MonoBehaviour:
     max: 1
   maxFogDistance:
     m_OverrideState: 1
-    m_Value: 2525
+    m_Value: 2457
     min: 0
   mipFogMaxMip:
     m_OverrideState: 1
@@ -53,7 +53,7 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: 75.9
     min: 1
   baseHeight:
     m_OverrideState: 1
@@ -73,7 +73,59 @@ MonoBehaviour:
     max: 1
   enableDistantFog:
     m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-7455903092197530342
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1be1b6c95cd2e41b27903b9270817f, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  mode:
+    m_OverrideState: 1
+    m_Value: 0
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    hdr: 0
+    showAlpha: 0
+    showEyeDropper: 1
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.266
+    min: 0
+    max: 1
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.2
+    min: 0.01
+    max: 1
+  roundness:
+    m_OverrideState: 1
     m_Value: 1
+    min: 0
+    max: 1
+  rounded:
+    m_OverrideState: 1
+    m_Value: 0
+  mask:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+  opacity:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,11 +141,12 @@ MonoBehaviour:
   components:
   - {fileID: 2926520594555130314}
   - {fileID: 4291193248687608038}
-  - {fileID: 1591912495330335307}
   - {fileID: 581487965126775500}
   - {fileID: -8241740458115642784}
   - {fileID: 2371344740394029526}
   - {fileID: 6025125828956634530}
+  - {fileID: 7688409218519632776}
+  - {fileID: -7455903092197530342}
 --- !u!114 &581487965126775500
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -110,17 +163,17 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.47
+    m_Value: 1.393
     min: 0
     max: 4
   stepCount:
     m_OverrideState: 1
-    m_Value: 11
+    m_Value: 6
     min: 2
     max: 32
   radius:
     m_OverrideState: 1
-    m_Value: 0.96
+    m_Value: 1.38
     min: 0.25
     max: 5
   fullResolution:
@@ -133,7 +186,7 @@ MonoBehaviour:
     max: 256
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.395
+    m_Value: 0.254
     min: 0
     max: 1
   enableRaytracing:
@@ -157,78 +210,6 @@ MonoBehaviour:
     m_Value: 16
     min: 1
     max: 32
---- !u!114 &1591912495330335307
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
-  m_Name: Exposure
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  mode:
-    m_OverrideState: 1
-    m_Value: 0
-  meteringMode:
-    m_OverrideState: 0
-    m_Value: 2
-  luminanceSource:
-    m_OverrideState: 0
-    m_Value: 1
-  fixedExposure:
-    m_OverrideState: 0
-    m_Value: 0
-  compensation:
-    m_OverrideState: 1
-    m_Value: -1.1
-  limitMin:
-    m_OverrideState: 0
-    m_Value: -10
-  limitMax:
-    m_OverrideState: 0
-    m_Value: 20
-  curveMap:
-    m_OverrideState: 0
-    m_Value:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: -10
-        value: -10
-        inSlope: 0
-        outSlope: 1
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 20
-        value: 20
-        inSlope: 1
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  adaptationMode:
-    m_OverrideState: 0
-    m_Value: 1
-  adaptationSpeedDarkToLight:
-    m_OverrideState: 0
-    m_Value: 3
-    min: 0.001
-  adaptationSpeedLightToDark:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0.001
 --- !u!114 &2371344740394029526
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -244,11 +225,11 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   focusMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   focusDistance:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 5.6
     min: 0.1
   nearFocusStart:
     m_OverrideState: 1
@@ -349,21 +330,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 1
+  active: 0
+  m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.185
+    m_Value: 0
     min: 0
     max: 1
   scatter:
-    m_OverrideState: 1
-    m_Value: 0.374
+    m_OverrideState: 0
+    m_Value: 0.049
     min: 0
     max: 1
   tint:
-    m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 0
+    m_Value: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -375,16 +356,16 @@ MonoBehaviour:
     m_Value: 0
     min: 0
   highQualityFiltering:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   resolution:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 2
   prefilter:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   anamorphic:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
 --- !u!114 &6025125828956634530
 MonoBehaviour:
@@ -398,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384c4d03a551c44448145f4093304119, type: 3}
   m_Name: ScreenSpaceReflection
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   depthBufferThickness:
     m_OverrideState: 1
@@ -407,7 +388,7 @@ MonoBehaviour:
     max: 1
   screenFadeDistance:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 0.38
     min: 0
     max: 1
   minSmoothness:
@@ -460,3 +441,75 @@ MonoBehaviour:
     m_Value: 16
     min: 1
     max: 32
+--- !u!114 &7688409218519632776
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
+  m_Name: Exposure
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  mode:
+    m_OverrideState: 1
+    m_Value: 0
+  meteringMode:
+    m_OverrideState: 0
+    m_Value: 2
+  luminanceSource:
+    m_OverrideState: 0
+    m_Value: 1
+  fixedExposure:
+    m_OverrideState: 1
+    m_Value: -2.1
+  compensation:
+    m_OverrideState: 0
+    m_Value: 0
+  limitMin:
+    m_OverrideState: 0
+    m_Value: -10
+  limitMax:
+    m_OverrideState: 0
+    m_Value: 20
+  curveMap:
+    m_OverrideState: 0
+    m_Value:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -10
+        value: -10
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 20
+        value: 20
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  adaptationMode:
+    m_OverrideState: 0
+    m_Value: 1
+  adaptationSpeedDarkToLight:
+    m_OverrideState: 0
+    m_Value: 3
+    min: 0.001
+  adaptationSpeedLightToDark:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0.001
