@@ -7,16 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Concrete_Tiles
-  m_Shader: {fileID: -6465566751694194690, guid: 6744a554f77d74b5c900d6faaed5c60c,
-    type: 3}
-  m_ShaderKeywords: _NORMALMAP _NORMALMAP_TANGENT_SPACE
+  m_Name: ConcreteFlat
+  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
+  m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    MotionVector: User
+  stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
@@ -31,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: df9905a7184a74c3a8417404f4d4da9a, type: 3}
+        m_Texture: {fileID: 2800000, guid: bdfc7b268f2e74285ab7a54e28cfca39, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -71,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: df9905a7184a74c3a8417404f4d4da9a, type: 3}
+        m_Texture: {fileID: 2800000, guid: bdfc7b268f2e74285ab7a54e28cfca39, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -79,43 +77,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 250ce1e1fc72f4f69a337a53298f160a, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxOcclusionMapping_608CC795_Heightmap_2:
-        m_Texture: {fileID: 2800000, guid: e9354a02715cf403b968c7c4f371f1b0, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_196DB8F6_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 8286a726904b446c6ad7697e057afd0e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_19E5B901_Texture_1:
-        m_Texture: {fileID: 2800000, guid: e5e37b7f7a496472d89564f665e52901, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_3E19073A_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 250ce1e1fc72f4f69a337a53298f160a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_A71462C5_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 85966af2329b34dbc833fd04c7eaf622, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_C7022649_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 6a62048ac8dae46c999af34706b41811, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_CD5CF3BF_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 85966af2329b34dbc833fd04c7eaf622, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_D686EBF9_Texture_1:
-        m_Texture: {fileID: 2800000, guid: df9905a7184a74c3a8417404f4d4da9a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -143,8 +109,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_DC2809F0: -0.5
-    - Vector1_FD181471: 0.909
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
